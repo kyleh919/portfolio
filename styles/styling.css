@@ -14,9 +14,24 @@ h3 {
   color: var(--primary-text-color);
 }
 
+h1.heading-lg {
+  font-size: 5rem;
+}
+h3.heading-sm {
+  font-size: 2rem;
+}
+
 a {
   color: var(--primary-text-color);
   text-decoration: none;
+}
+
+main {
+  border: 1px solid red;
+}
+
+main main .icons a {
+  padding: 0.5rem;
 }
 
 main .icons a:hover {
