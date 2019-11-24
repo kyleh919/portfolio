@@ -16,6 +16,7 @@ h3 {
 
 h1.heading-lg {
   font-size: 5rem;
+  border: 1px solid blue;
 }
 h3.heading-sm {
   font-size: 2rem;
@@ -30,7 +31,7 @@ main {
   border: 1px solid red;
 }
 
-main main .icons a {
+main .icons a {
   padding: 0.5rem;
 }
 
