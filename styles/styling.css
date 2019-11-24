@@ -1,25 +1,28 @@
+:root {
+  --background-color: #333333;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #00b3ff;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  /* background: #0a0a0a; */
-  /* background: #4d4d4d; */
-  background: #333333;
+  background: var(--background-color);
 }
 
 h1,
 h3 {
-  color: #ffffff;
+  color: var(--primary-text-color);
 }
 
 a {
-  color: #ffffff;
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 
-h1.heading-lg {
-  /* color: blue; */
+main .icons a:hover {
+  color: var(--secondary-text-color);
 }
 
 .text-secondary {
-  /* color: lightblue; */
-  color: #00b3ff;
+  color: var(--secondary-text-color);
 }
