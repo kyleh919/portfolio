@@ -1,5 +1,6 @@
 :root {
-  --background-color: #333333;
+  /* --background-color: #333333; */
+  --background-color: #212121;
   --primary-text-color: #ffffff;
   --secondary-text-color: #00b3ff;
 }
@@ -35,6 +36,7 @@ main {
   border: 1px solid red;
 
   padding: 5rem;
+  margin-top: 20vh;
 }
 
 main .icons a {
