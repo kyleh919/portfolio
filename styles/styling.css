@@ -32,6 +32,18 @@ a {
   text-decoration: none;
 }
 
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.menu-btn .btn-line {
+  background: #ffffff;
+  margin: 0 0 5px 0;
+  width: 25px;
+  height: 3px;
+}
+
 main {
   border: 1px solid red;
 
