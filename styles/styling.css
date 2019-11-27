@@ -51,8 +51,12 @@ main {
   margin-top: 20vh;
 }
 
+main .icons {
+  margin: 1.25rem;
+}
+
 main .icons a {
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 
 main .icons a:hover {
