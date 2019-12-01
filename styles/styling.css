@@ -59,6 +59,19 @@ a {
   height: 3px;
 }
 
+.menu {
+  visibility: hidden;
+}
+.menu.show {
+  visibility: visible;
+}
+.menu-nav.show {
+  visibility: visible;
+}
+.nav-item.show {
+  visibility: visible;
+}
+
 main {
   /* border: 1px solid red; */
 
