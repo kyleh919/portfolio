@@ -39,6 +39,9 @@ a {
   left: 30px;
   cursor: pointer;
 }
+.menu-btn.close {
+  border: 1px solid red;
+}
 .menu-btn .btn-line {
   background: #ffffff;
   margin: 0 0 5px 0;
