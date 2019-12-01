@@ -38,9 +38,19 @@ a {
   top: 30px;
   left: 30px;
   cursor: pointer;
+  transition: all 0.25s ease-out;
 }
 .menu-btn.close {
-  border: 1px solid red;
+  transform: rotate(90deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  visibility: hidden;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -5px);
 }
 .menu-btn .btn-line {
   background: #ffffff;
