@@ -2,7 +2,7 @@
   /* --background-color: #333333; */
   --background-color: #212121;
   --primary-text-color: #ffffff;
-  --secondary-text-color: #00b3ff;
+  --primary-color: #00b3ff;
 }
 
 body {
@@ -39,6 +39,7 @@ a {
   left: 30px;
   cursor: pointer;
   transition: all 0.25s ease-out;
+  z-index: 3;
 }
 .menu-btn.close {
   transform: rotate(90deg);
@@ -61,15 +62,66 @@ a {
 
 .menu {
   visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.98;
 }
 .menu.show {
   visibility: visible;
 }
-.menu-nav.show {
-  visibility: visible;
+.menu-picture,
+.menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
 }
-.nav-item.show {
-  visibility: visible;
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: black;
+  list-style: none;
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-out;
+}
+.menu-nav.show {
+  /* visibility: visible; */
+  transform: translate3d(0, 0, 0);
+}
+.menu-picture {
+  background: #0a0a0a;
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.5s ease-out;
+}
+.menu-picture.show {
+  transform: translate3d(0, 0, 0);
+}
+.menu-picture .my-picture {
+  width: 250px;
+  height: 250px;
+  background: url("../images/me.jpeg");
+  border-radius: 50%;
+  border: solid 3px var(--primary-color);
+}
+
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+.menu .nav-link:hover {
+  color: var(--primary-color);
 }
 
 main {
@@ -88,9 +140,9 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: var(--secondary-text-color);
+  color: var(--primary-color);
 }
 
 .text-secondary {
-  color: var(--secondary-text-color);
+  color: var(--primary-color);
 }
