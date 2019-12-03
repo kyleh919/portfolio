@@ -142,6 +142,7 @@ main .icons a {
 
 main .icons a:hover {
   color: var(--primary-color);
+  transition: all 0.5s ease-out;
 }
 
 .text-secondary {
